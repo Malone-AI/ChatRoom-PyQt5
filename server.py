@@ -5,7 +5,7 @@ import threading
 class Server(object):
     def __init__(self):
         self.server = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-        self.server.bind(("192.168.222.1",9999))
+        self.server.bind(("127.0.0.1",5000))
         self.server.listen(5)
         # 所有客户端
         self.clients = []
